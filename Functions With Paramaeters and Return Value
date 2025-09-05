@@ -1,0 +1,64 @@
+
+
+# 1. Product Rating Analysis
+
+def calculate_average_rating(a, b, c):
+    return round((a + b + c) / 3, 2)
+
+def analyze_product_rating(a, b, c, d, e):
+    avg_rating = calculate_average_rating(c, d, e)
+    print(f"Product Name: {a}")
+    print(f"Category: {b}")
+    print(f"Quality Rating: {c:.2f}")
+    print(f"Price Rating: {d:.2f}")
+    print(f"Service Rating: {e:.2f}")
+    print(f"Overall Average Rating: {avg_rating:.2f}")
+
+productName = input("Enter Product Name: ")
+category = input("Enter Category: ")
+quality = float(input("Enter Quality Rating: "))
+price = float(input("Enter Price Rating: "))
+service = float(input("Enter Service Rating: "))
+analyze_product_rating(productName, category, quality, price, service)
+
+# 2. Sum of Numbers
+
+def add_numbers(a, b):
+    return a + b
+
+first_num = int(input("Enter first number: "))
+second_num = int(input("Enter second number: "))
+result = add_numbers(first_num, second_num)
+print(f"Sum of numbers: {result}")
+
+# 3. The Bare Minimum
+
+def min(a, b, c):
+    return round(min(a, b, c), 3)
+
+first_val = float(input("Enter first value: "))
+second_val = float(input("Enter second value: "))
+third_val = float(input("Enter third value: "))
+minimum_val = min(first_val, second_val, third_val)
+print(f"Minimum Value: {minimum_val}")
+
+# 4. Linear Equation Calculator
+
+def calculate_linear_equation(a, b, c):
+    return round(b * a + c, 1)
+
+x = float(input("Enter x: "))
+slope = float(input("Enter slope: "))
+intercept = float(input("Enter y intercept: "))
+result = calculate_linear_equation(x, slope, intercept)
+print(f"Result: {result}")
+
+# 5. Percentage Calculator
+
+def calculate_percentage(a, b):
+    return round((a / b) * 100, 2)
+
+value = float(input("Enter the value: "))
+total = float(input("Enter the total: "))
+percentage = calculate_percentage(value, total)
+print(f"{percentage}% of {total} is {value}")
