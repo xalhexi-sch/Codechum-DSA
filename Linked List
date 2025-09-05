@@ -31,3 +31,13 @@ def print_squared_values(head):
 if __name__ == "__main__":
     program = Program()
     program.main()
+
+==================
+
+def print_squared_values(head):
+  current = head
+  output = []
+  while current:
+    output.append(str(current.value ** 2))
+    current = current.next
+  print(" ".join(output))
